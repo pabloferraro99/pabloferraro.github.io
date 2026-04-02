@@ -1408,3 +1408,130 @@ button {
     animation: none;
   }
 }
+
+
+/* ============================================
+   UI/UX POLISH — Accessibility, Focus, Micro-interactions
+   ============================================ */
+
+/* --- Focus states (keyboard accessibility) --- */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+.nav__link:focus-visible,
+.nav__cta:focus-visible,
+.nav__lang-btn:focus-visible {
+  outline-offset: 4px;
+}
+
+/* --- Minimum touch targets (44px) --- */
+.btn {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+.hero__social-link {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.contact__link {
+  min-height: 44px;
+}
+
+.nav__lang-btn {
+  min-width: 36px;
+  min-height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --- Gradient border on card hover --- */
+.project-card:hover .project-card__accent {
+  background: var(--color-accent-gradient);
+  height: 4px;
+  filter: brightness(1.2);
+}
+
+/* --- Skill tag micro-interaction --- */
+.skill-tag {
+  transition: all 180ms ease;
+}
+
+/* --- Better card interaction feedback --- */
+.skill-card,
+.project-card,
+.edu-card,
+.about__card,
+.timeline__card,
+.metric-card {
+  will-change: transform;
+  transition: transform 220ms ease-out, box-shadow 220ms ease-out, border-color 220ms ease-out, background 220ms ease-out;
+}
+
+/* --- Smooth link arrow animation --- */
+.project-card__link svg {
+  transition: transform 200ms ease;
+}
+
+.project-card__link:hover svg {
+  transform: translateX(4px);
+}
+
+/* --- Nav link interaction polish --- */
+.nav__link {
+  position: relative;
+  padding: var(--space-1) 0;
+}
+
+/* --- Button press feedback --- */
+.btn:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.hero__social-link:active {
+  transform: scale(0.95);
+}
+
+/* --- Contact link gradient border on hover --- */
+.contact__link:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  background: rgba(59, 130, 246, 0.08);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.15);
+}
+
+/* --- Metric card number weight --- */
+.metric-card__value {
+  font-variant-numeric: tabular-nums;
+}
+
+/* --- Selection color --- */
+::selection {
+  background: rgba(59, 130, 246, 0.2);
+  color: var(--color-text-dark);
+}
+
+/* --- Smooth scrollbar (webkit) --- */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-text-muted);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-body);
+}
