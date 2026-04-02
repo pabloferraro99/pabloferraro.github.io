@@ -282,10 +282,10 @@ button {
 }
 
 .nav__lang-btn {
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.7);
   padding: var(--space-1) var(--space-2);
   border-radius: var(--radius-sm);
   transition: all var(--transition-base);
@@ -293,17 +293,17 @@ button {
 }
 
 .nav__lang-btn:hover {
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--color-white);
 }
 
 .nav__lang-btn--active {
   color: var(--color-white);
-  background: rgba(255, 255, 255, 0.1);
+  font-weight: 600;
 }
 
 .nav__lang-sep {
   font-size: 0.7rem;
-  color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 /* Hamburger */
