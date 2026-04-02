@@ -29,6 +29,7 @@
       <!-- Desktop links -->
       <div class="nav__links">
         <a href="#about" class="nav__link" data-section="about">About</a>
+        <a href="#quant" class="nav__link" data-section="quant">Quant</a>
         <a href="#skills" class="nav__link" data-section="skills">Skills</a>
         <a href="#experience" class="nav__link" data-section="experience">Experience</a>
         <a href="#projects" class="nav__link" data-section="projects">Projects</a>
@@ -47,6 +48,7 @@
     <!-- Mobile menu -->
     <div class="nav__mobile-menu" id="mobile-menu">
       <a href="#about" class="nav__mobile-link">About</a>
+      <a href="#quant" class="nav__mobile-link">Quant</a>
       <a href="#skills" class="nav__mobile-link">Skills</a>
       <a href="#experience" class="nav__mobile-link">Experience</a>
       <a href="#projects" class="nav__mobile-link">Projects</a>
@@ -149,6 +151,51 @@
             <p>How to forecast credit risk with precision. How to find alpha in noisy markets. How to turn 20M+ raw time-series records into actionable predictions that save real money.</p>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================
+       QUANT PERFORMANCE SECTION
+       ======================================== -->
+  <section class="section section--dark metrics" id="quant">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section-label" style="color: var(--color-accent);">Quant Research</span>
+        <h2 class="section-title" style="color: var(--color-white);">Systematic Alpha Research</h2>
+        <p class="section-subtitle" style="color: var(--color-text-light-muted);">Designing and operating ML-driven trading systems across US equities and commodities, with rigorous walk-forward validation and multi-layer risk management.</p>
+      </div>
+
+      <div class="metrics__grid reveal">
+        <div class="metric-card">
+          <span class="metric-card__label">Track Record</span>
+          <div class="metric-card__value"><span class="counter" data-target="10">0</span>+ Years</div>
+          <p class="metric-card__detail">Walk-forward validated</p>
+        </div>
+        <div class="metric-card">
+          <span class="metric-card__label">Trades Executed</span>
+          <div class="metric-card__value"><span class="counter" data-target="2000">0</span>+</div>
+          <p class="metric-card__detail">Across equities & commodities</p>
+        </div>
+        <div class="metric-card">
+          <span class="metric-card__label">ML Pipeline</span>
+          <div class="metric-card__value">LightGBM</div>
+          <p class="metric-card__detail">Retrained every 4 weeks</p>
+        </div>
+        <div class="metric-card">
+          <span class="metric-card__label">Risk Layers</span>
+          <div class="metric-card__value"><span class="counter" data-target="5">0</span></div>
+          <p class="metric-card__detail">VIX, drawdown, sector, position, stop-loss</p>
+        </div>
+      </div>
+
+      <div class="metrics__footer reveal reveal-delay-1">
+        <span class="metrics__stat">50-Stock Universe</span>
+        <span class="metrics__divider"></span>
+        <span class="metrics__stat">IBKR & DEGIRO Execution</span>
+        <span class="metrics__divider"></span>
+        <span class="metrics__stat">Real-Time Signal Delivery</span>
       </div>
     </div>
   </section>
@@ -312,19 +359,19 @@
         <div class="project-card reveal reveal-delay-1">
           <div class="project-card__accent"></div>
           <div class="project-card__body">
-            <h3 class="project-card__title">Systematic Trading Strategies</h3>
+            <h3 class="project-card__title">Systematic ML Trading Engine</h3>
             <span class="project-card__label">Problem</span>
-            <p class="project-card__text">Finding consistent alpha across futures, equities, and crypto markets requires disciplined systematic approaches, not discretionary gut calls.</p>
+            <p class="project-card__text">Discretionary trading doesn't scale. Needed a fully systematic, ML-driven pipeline to rank and trade US equities with institutional-grade risk controls.</p>
             <span class="project-card__label">Approach</span>
-            <p class="project-card__text">Designed, tested, and optimized systematic trading models with alpha discovery, execution optimization, and rigorous backtesting across multiple asset classes.</p>
+            <p class="project-card__text">Built a LightGBM walk-forward pipeline over a 50-stock universe with 5-layer risk management (VIX, drawdown tiers, sector limits, position caps, stop-losses) and automated execution via IBKR API.</p>
             <div class="project-card__bottom">
               <div class="project-card__tags">
                 <span class="project-card__tag">Python</span>
-                <span class="project-card__tag">Backtesting</span>
-                <span class="project-card__tag">Statistical Learning</span>
-                <span class="project-card__tag">Time Series</span>
+                <span class="project-card__tag">LightGBM</span>
+                <span class="project-card__tag">IBKR API</span>
+                <span class="project-card__tag">Walk-Forward</span>
               </div>
-              <div class="project-card__impact">Robust performance through systematic alpha generation and risk-managed execution</div>
+              <div class="project-card__impact">10+ year walk-forward validated | Multi-layer risk management</div>
               <div class="project-card__footer">
                 <a href="#" class="project-card__link">
                   View on GitHub

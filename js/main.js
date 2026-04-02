@@ -197,6 +197,45 @@
     animate();
   })();
 
+  // --- Animated counters ---
+  var counters = document.querySelectorAll('.counter');
+
+  if ('IntersectionObserver' in window && counters.length > 0) {
+    var counterObserver = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            var el = entry.target;
+            var target = parseInt(el.getAttribute('data-target'), 10);
+            var duration = target > 100 ? 2000 : 1200;
+            var start = 0;
+            var startTime = null;
+
+            function step(timestamp) {
+              if (!startTime) startTime = timestamp;
+              var progress = Math.min((timestamp - startTime) / duration, 1);
+              // Ease out cubic
+              var eased = 1 - Math.pow(1 - progress, 3);
+              var current = Math.round(start + (target - start) * eased);
+              el.textContent = current.toLocaleString();
+              if (progress < 1) {
+                requestAnimationFrame(step);
+              }
+            }
+
+            requestAnimationFrame(step);
+            counterObserver.unobserve(el);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    counters.forEach(function (counter) {
+      counterObserver.observe(counter);
+    });
+  }
+
   // --- Active section highlighting in nav ---
   var sections = document.querySelectorAll('section[id]');
   var navLinks = document.querySelectorAll('.nav__link[data-section]');
