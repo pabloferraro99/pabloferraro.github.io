@@ -28,13 +28,18 @@
 
       <!-- Desktop links -->
       <div class="nav__links">
-        <a href="#about" class="nav__link" data-section="about">About</a>
+        <a href="#about" class="nav__link" data-section="about" data-es="Sobre mí">About</a>
         <a href="#quant" class="nav__link" data-section="quant">Quant</a>
-        <a href="#skills" class="nav__link" data-section="skills">Skills</a>
-        <a href="#experience" class="nav__link" data-section="experience">Experience</a>
-        <a href="#projects" class="nav__link" data-section="projects">Projects</a>
-        <a href="#education" class="nav__link" data-section="education">Education</a>
-        <a href="#contact" class="nav__cta" data-section="contact">Contact</a>
+        <a href="#skills" class="nav__link" data-section="skills" data-es="Habilidades">Skills</a>
+        <a href="#experience" class="nav__link" data-section="experience" data-es="Experiencia">Experience</a>
+        <a href="#projects" class="nav__link" data-section="projects" data-es="Proyectos">Projects</a>
+        <a href="#education" class="nav__link" data-section="education" data-es="Formación">Education</a>
+        <a href="#contact" class="nav__cta" data-section="contact" data-es="Contacto">Contact</a>
+        <div class="nav__lang">
+          <button class="nav__lang-btn nav__lang-btn--active" data-lang="en">EN</button>
+          <span class="nav__lang-sep">|</span>
+          <button class="nav__lang-btn" data-lang="es">ES</button>
+        </div>
       </div>
 
       <!-- Hamburger (mobile) -->
@@ -47,13 +52,18 @@
 
     <!-- Mobile menu -->
     <div class="nav__mobile-menu" id="mobile-menu">
-      <a href="#about" class="nav__mobile-link">About</a>
+      <a href="#about" class="nav__mobile-link" data-es="Sobre mí">About</a>
       <a href="#quant" class="nav__mobile-link">Quant</a>
-      <a href="#skills" class="nav__mobile-link">Skills</a>
-      <a href="#experience" class="nav__mobile-link">Experience</a>
-      <a href="#projects" class="nav__mobile-link">Projects</a>
-      <a href="#education" class="nav__mobile-link">Education</a>
-      <a href="#contact" class="nav__mobile-link">Contact</a>
+      <a href="#skills" class="nav__mobile-link" data-es="Habilidades">Skills</a>
+      <a href="#experience" class="nav__mobile-link" data-es="Experiencia">Experience</a>
+      <a href="#projects" class="nav__mobile-link" data-es="Proyectos">Projects</a>
+      <a href="#education" class="nav__mobile-link" data-es="Formación">Education</a>
+      <a href="#contact" class="nav__mobile-link" data-es="Contacto">Contact</a>
+      <div class="nav__lang nav__lang--mobile">
+        <button class="nav__lang-btn nav__lang-btn--active" data-lang="en">EN</button>
+        <span class="nav__lang-sep">|</span>
+        <button class="nav__lang-btn" data-lang="es">ES</button>
+      </div>
     </div>
   </nav>
 
@@ -67,22 +77,22 @@
     <div class="hero__grid"></div>
     <div class="container hero__content">
 
-      <p class="hero__greeting">Hello, I'm</p>
+      <p class="hero__greeting" data-es="Hola, soy">Hello, I'm</p>
 
       <h1 class="hero__name">Pablo <span>Ferraro</span></h1>
 
-      <p class="hero__title">
+      <p class="hero__title" data-es="Data Scientist & Quantitative Researcher. Construyendo modelos de ML, estrategias de trading sistemático y soluciones analíticas end-to-end en finanzas y tecnología.">
         Data Scientist & Quantitative Researcher. Building ML-driven models, systematic trading strategies, and end-to-end analytics solutions across finance and technology.
       </p>
 
       <div class="hero__actions">
         <a href="#contact" class="btn btn--primary">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          Get in Touch
+          <span data-es="Contactar">Get in Touch</span>
         </a>
         <a href="#projects" class="btn btn--outline">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-          View Projects
+          <span data-es="Ver Proyectos">View Projects</span>
         </a>
       </div>
 
@@ -111,19 +121,19 @@
   <section class="section section--light" id="about">
     <div class="container">
       <div class="section__header reveal">
-        <span class="section-label">About Me</span>
-        <h2 class="section-title">Building Clarity from Complexity</h2>
+        <span class="section-label" data-es="Sobre mí">About Me</span>
+        <h2 class="section-title" data-es="Claridad a partir de la complejidad">Building Clarity from Complexity</h2>
       </div>
 
       <div class="about__grid">
         <div class="about__text reveal reveal-delay-1">
-          <p>
+          <p data-es="Soy Data Scientist e Investigador Cuantitativo con experiencia sólida en machine learning, modelado predictivo e ingeniería de datos en finanzas y tecnología. Desarrollo soluciones analíticas end-to-end con Python, SQL y Azure Databricks, transformando datos complejos en insights accionables.">
             I'm a Data Scientist and Quantitative Researcher with strong expertise in machine learning, predictive modelling, and data engineering across finance and technology. I develop end-to-end analytics solutions using Python, SQL, and Azure Databricks, transforming complex data into actionable insights.
           </p>
-          <p>
+          <p data-es="En mi tiempo libre, investigo y opero equities americanas y commodities de forma sistemática, diseñando estrategias generadoras de alpha con backtesting riguroso y optimización de ejecución. Me apasiona encontrar señal en el ruido y generar retornos consistentes.">
             On my own time, I research and trade US equities and commodities systematically, designing alpha-generating strategies with rigorous backtesting and execution optimization. I'm passionate about finding signal in noise and generating consistent returns.
           </p>
-          <p>
+          <p data-es="Actualmente trabajo como Analista Cuantitativo en Deloitte en Riesgo Financiero, mientras construyo mis propios sistemas de investigación y trading cuantitativo. Alumni de IE University y UC Berkeley, basado en Madrid.">
             Currently working as a Quantitative Analyst at Deloitte in Financial Risk, while actively building my own quant research and trading systems. IE University and UC Berkeley alumni based in Madrid.
           </p>
         </div>
@@ -132,23 +142,23 @@
           <div class="about__card reveal reveal-delay-2">
             <h3 class="about__card-title">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
-              What I Do
+              <span data-es="Lo que hago">What I Do</span>
             </h3>
-            <p>Build data-driven models for credit and portfolio analytics, design systematic trading strategies, and develop AI-powered tools that scale in production environments.</p>
+            <p data-es="Construyo modelos data-driven para analítica crediticia y de carteras, diseño estrategias de trading sistemático y desarrollo herramientas de IA que escalan en producción.">Build data-driven models for credit and portfolio analytics, design systematic trading strategies, and develop AI-powered tools that scale in production environments.</p>
           </div>
           <div class="about__card reveal reveal-delay-3">
             <h3 class="about__card-title">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              What I Excel At
+              <span data-es="En lo que destaco">What I Excel At</span>
             </h3>
-            <p>Connecting quantitative research with production code. From alpha discovery and backtesting to deploying ML pipelines on large-scale datasets with >10M records.</p>
+            <p data-es="Conectar investigación cuantitativa con código productivo. Desde descubrimiento de alpha y backtesting hasta despliegue de pipelines ML sobre datasets de >10M registros.">Connecting quantitative research with production code. From alpha discovery and backtesting to deploying ML pipelines on large-scale datasets with >10M records.</p>
           </div>
           <div class="about__card reveal reveal-delay-4">
             <h3 class="about__card-title">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-              Problems I Solve
+              <span data-es="Problemas que resuelvo">Problems I Solve</span>
             </h3>
-            <p>How to forecast credit risk with precision. How to find alpha in noisy markets. How to turn 20M+ raw time-series records into actionable predictions that save real money.</p>
+            <p data-es="Cómo predecir riesgo crediticio con precisión. Cómo encontrar alpha en mercados ruidosos. Cómo convertir 20M+ registros de series temporales en predicciones accionables que ahorran dinero real.">How to forecast credit risk with precision. How to find alpha in noisy markets. How to turn 20M+ raw time-series records into actionable predictions that save real money.</p>
           </div>
         </div>
       </div>
@@ -162,31 +172,31 @@
   <section class="section section--dark metrics" id="quant">
     <div class="container">
       <div class="section__header reveal">
-        <span class="section-label" style="color: var(--color-accent);">Quant Research</span>
-        <h2 class="section-title" style="color: var(--color-white);">Systematic Alpha Research</h2>
-        <p class="section-subtitle" style="color: var(--color-text-light-muted);">Designing and operating ML-driven trading systems across US equities and commodities, with rigorous walk-forward validation and multi-layer risk management.</p>
+        <span class="section-label" style="color: var(--color-accent);" data-es="Investigación Quant">Quant Research</span>
+        <h2 class="section-title" style="color: var(--color-white);" data-es="Investigación Sistemática de Alpha">Systematic Alpha Research</h2>
+        <p class="section-subtitle" style="color: var(--color-text-light-muted);" data-es="Diseño y operación de sistemas de trading basados en ML sobre equities americanas y commodities, con validación rigurosa y gestión de riesgo multicapa.">Designing and operating ML-driven trading systems across US equities and commodities, with rigorous walk-forward validation and multi-layer risk management.</p>
       </div>
 
       <div class="metrics__grid reveal">
         <div class="metric-card">
-          <span class="metric-card__label">Track Record</span>
-          <div class="metric-card__value"><span class="counter" data-target="10">0</span>+ Years</div>
-          <p class="metric-card__detail">Backtested & validated</p>
+          <span class="metric-card__label" data-es="Track Record">Track Record</span>
+          <div class="metric-card__value"><span class="counter" data-target="10">0</span>+ <span data-es="Años">Years</span></div>
+          <p class="metric-card__detail" data-es="Backtested y validado">Backtested & validated</p>
         </div>
         <div class="metric-card">
-          <span class="metric-card__label">Trades Executed</span>
+          <span class="metric-card__label" data-es="Operaciones Ejecutadas">Trades Executed</span>
           <div class="metric-card__value"><span class="counter" data-target="2000">0</span>+</div>
-          <p class="metric-card__detail">Across equities & commodities</p>
+          <p class="metric-card__detail" data-es="En equities y commodities">Across equities & commodities</p>
         </div>
         <div class="metric-card">
-          <span class="metric-card__label">Approach</span>
-          <div class="metric-card__value">Systematic</div>
-          <p class="metric-card__detail">Data-driven, rules-based</p>
+          <span class="metric-card__label" data-es="Enfoque">Approach</span>
+          <div class="metric-card__value" data-es="Sistemático">Systematic</div>
+          <p class="metric-card__detail" data-es="Data-driven, basado en reglas">Data-driven, rules-based</p>
         </div>
         <div class="metric-card">
-          <span class="metric-card__label">Focus</span>
+          <span class="metric-card__label" data-es="Objetivo">Focus</span>
           <div class="metric-card__value">Alpha</div>
-          <p class="metric-card__detail">Consistent, risk-managed returns</p>
+          <p class="metric-card__detail" data-es="Retornos consistentes con gestión de riesgo">Consistent, risk-managed returns</p>
         </div>
       </div>
 
@@ -195,7 +205,7 @@
         <span class="metrics__divider"></span>
         <span class="metrics__stat">Commodities</span>
         <span class="metrics__divider"></span>
-        <span class="metrics__stat">Multi-Layer Risk Management</span>
+        <span class="metrics__stat" data-es="Gestión de Riesgo Multicapa">Multi-Layer Risk Management</span>
       </div>
     </div>
   </section>
@@ -207,9 +217,9 @@
   <section class="section section--alt" id="skills">
     <div class="container">
       <div class="section__header reveal">
-        <span class="section-label">Expertise</span>
-        <h2 class="section-title">Tools & Technologies</h2>
-        <p class="section-subtitle">A curated stack built for quantitative analysis, data engineering, and financial modeling.</p>
+        <span class="section-label" data-es="Especialización">Expertise</span>
+        <h2 class="section-title" data-es="Herramientas y Tecnologías">Tools & Technologies</h2>
+        <p class="section-subtitle" data-es="Un stack seleccionado para análisis cuantitativo, ingeniería de datos y modelado financiero.">A curated stack built for quantitative analysis, data engineering, and financial modeling.</p>
       </div>
 
       <div class="skills__grid">
@@ -218,7 +228,7 @@
           <div class="skill-card__icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
           </div>
-          <h3 class="skill-card__title">Data Science & ML</h3>
+          <h3 class="skill-card__title" data-es="Data Science & ML">Data Science & ML</h3>
           <div class="skill-card__tags">
             <span class="skill-tag">Python</span>
             <span class="skill-tag">SQL</span>
@@ -235,7 +245,7 @@
           <div class="skill-card__icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
           </div>
-          <h3 class="skill-card__title">Quant Finance & Trading</h3>
+          <h3 class="skill-card__title" data-es="Finanzas Cuantitativas & Trading">Quant Finance & Trading</h3>
           <div class="skill-card__tags">
             <span class="skill-tag">Portfolio Analytics</span>
             <span class="skill-tag">Alpha Research</span>
@@ -251,7 +261,7 @@
           <div class="skill-card__icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
           </div>
-          <h3 class="skill-card__title">Data Engineering</h3>
+          <h3 class="skill-card__title" data-es="Ingeniería de Datos">Data Engineering</h3>
           <div class="skill-card__tags">
             <span class="skill-tag">Azure Databricks</span>
             <span class="skill-tag">ETL Pipelines</span>
@@ -267,7 +277,7 @@
           <div class="skill-card__icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
           </div>
-          <h3 class="skill-card__title">BI & Visualization</h3>
+          <h3 class="skill-card__title" data-es="BI & Visualización">BI & Visualization</h3>
           <div class="skill-card__tags">
             <span class="skill-tag">Dashboards</span>
             <span class="skill-tag">Streamlit</span>
@@ -290,8 +300,8 @@
   <section class="section section--light" id="experience">
     <div class="container">
       <div class="section__header reveal">
-        <span class="section-label">Experience</span>
-        <h2 class="section-title">Where I've Made an Impact</h2>
+        <span class="section-label" data-es="Experiencia">Experience</span>
+        <h2 class="section-title" data-es="Donde he generado impacto">Where I've Made an Impact</h2>
       </div>
 
       <div class="timeline">
@@ -299,14 +309,14 @@
         <div class="timeline__item reveal">
           <div class="timeline__dot"></div>
           <div class="timeline__card">
-            <span class="timeline__date">Oct 2024 — Present</span>
-            <h3 class="timeline__role">Quantitative Analyst — Financial Risk</h3>
+            <span class="timeline__date" data-es="Oct 2024 — Presente">Oct 2024 — Present</span>
+            <h3 class="timeline__role" data-es="Analista Cuantitativo — Riesgo Financiero">Quantitative Analyst — Financial Risk</h3>
             <p class="timeline__company">Deloitte, Madrid</p>
             <div class="timeline__achievements">
-              <p class="timeline__achievement">Developed and deployed data-driven models for credit and portfolio analytics, leveraging Python, SQL, Azure, and Databricks on large-scale datasets (>10M records).</p>
-              <p class="timeline__achievement">Built end-to-end data pipelines for ingestion, transformation, and reporting, supporting real-time insights and automated dashboards in production.</p>
-              <p class="timeline__achievement">Applied time series and predictive modelling techniques (ARIMA, SARIMA, regression, ML) to forecast credit parameters and optimize portfolio performance.</p>
-              <p class="timeline__achievement">Collaborated cross-functionally with data engineers, risk teams, and business stakeholders to deliver scalable AI solutions.</p>
+              <p class="timeline__achievement" data-es="Desarrollo y despliegue de modelos data-driven para analítica crediticia y de carteras, usando Python, SQL, Azure y Databricks sobre datasets de >10M registros.">Developed and deployed data-driven models for credit and portfolio analytics, leveraging Python, SQL, Azure, and Databricks on large-scale datasets (>10M records).</p>
+              <p class="timeline__achievement" data-es="Construcción de pipelines de datos end-to-end para ingesta, transformación y reporting, con dashboards automatizados en producción.">Built end-to-end data pipelines for ingestion, transformation, and reporting, supporting real-time insights and automated dashboards in production.</p>
+              <p class="timeline__achievement" data-es="Aplicación de técnicas de series temporales y modelado predictivo (ARIMA, SARIMA, regresión, ML) para forecasting de parámetros crediticios y optimización de carteras.">Applied time series and predictive modelling techniques (ARIMA, SARIMA, regression, ML) to forecast credit parameters and optimize portfolio performance.</p>
+              <p class="timeline__achievement" data-es="Colaboración cross-funcional con ingenieros de datos, equipos de riesgo y stakeholders de negocio para entregar soluciones de IA escalables.">Collaborated cross-functionally with data engineers, risk teams, and business stakeholders to deliver scalable AI solutions.</p>
             </div>
           </div>
         </div>
@@ -314,13 +324,13 @@
         <div class="timeline__item reveal">
           <div class="timeline__dot"></div>
           <div class="timeline__card">
-            <span class="timeline__date">May 2021 — Present</span>
-            <h3 class="timeline__role">Portfolio Manager & Quant Researcher</h3>
-            <p class="timeline__company">Freelance — Asset Management, Valencia</p>
+            <span class="timeline__date" data-es="May 2021 — Presente">May 2021 — Present</span>
+            <h3 class="timeline__role" data-es="Gestor de Carteras & Investigador Cuantitativo">Portfolio Manager & Quant Researcher</h3>
+            <p class="timeline__company" data-es="Freelance — Gestión de Activos, Valencia">Freelance — Asset Management, Valencia</p>
             <div class="timeline__achievements">
-              <p class="timeline__achievement">Managing a multi-asset portfolio (equities, ETFs, crypto) for private clients, achieving annualized returns >35%.</p>
-              <p class="timeline__achievement">Designed and implemented algorithmic trading models in Python using backtesting frameworks and statistical learning.</p>
-              <p class="timeline__achievement">Researching alpha in US equities and commodities through systematic strategies with rigorous risk management.</p>
+              <p class="timeline__achievement" data-es="Gestión de cartera multi-activo (equities, ETFs, crypto) para clientes privados, con retornos anualizados >35%.">Managing a multi-asset portfolio (equities, ETFs, crypto) for private clients, achieving annualized returns >35%.</p>
+              <p class="timeline__achievement" data-es="Diseño e implementación de modelos de trading algorítmico en Python con frameworks de backtesting y aprendizaje estadístico.">Designed and implemented algorithmic trading models in Python using backtesting frameworks and statistical learning.</p>
+              <p class="timeline__achievement" data-es="Investigación de alpha en equities americanas y commodities mediante estrategias sistemáticas con gestión de riesgo rigurosa.">Researching alpha in US equities and commodities through systematic strategies with rigorous risk management.</p>
             </div>
           </div>
         </div>
@@ -329,11 +339,11 @@
           <div class="timeline__dot"></div>
           <div class="timeline__card">
             <span class="timeline__date">Jan 2023 — Jun 2023</span>
-            <h3 class="timeline__role">Finance Intern</h3>
+            <h3 class="timeline__role" data-es="Becario de Finanzas">Finance Intern</h3>
             <p class="timeline__company">Everon Research (FinTech Startup), Valencia</p>
             <div class="timeline__achievements">
-              <p class="timeline__achievement">Analyzed financial data supplied by Reuters in real time, provided performance reports, and developed investment plans for clients.</p>
-              <p class="timeline__achievement">Designed presentations for investors, researched new investment opportunities, and participated in client meetings, successfully securing a deal with a new client.</p>
+              <p class="timeline__achievement" data-es="Análisis de datos financieros de Reuters en tiempo real, elaboración de informes de rendimiento y desarrollo de planes de inversión para clientes.">Analyzed financial data supplied by Reuters in real time, provided performance reports, and developed investment plans for clients.</p>
+              <p class="timeline__achievement" data-es="Diseño de presentaciones para inversores, investigación de nuevas oportunidades y participación en reuniones con clientes, cerrando un acuerdo con un nuevo cliente.">Designed presentations for investors, researched new investment opportunities, and participated in client meetings, successfully securing a deal with a new client.</p>
             </div>
           </div>
         </div>
@@ -349,9 +359,9 @@
   <section class="section section--alt" id="projects">
     <div class="container">
       <div class="section__header reveal">
-        <span class="section-label">Projects</span>
-        <h2 class="section-title">Selected Work</h2>
-        <p class="section-subtitle">A selection of projects where I applied quantitative thinking to solve real problems.</p>
+        <span class="section-label" data-es="Proyectos">Projects</span>
+        <h2 class="section-title" data-es="Trabajo Seleccionado">Selected Work</h2>
+        <p class="section-subtitle" data-es="Una selección de proyectos donde apliqué pensamiento cuantitativo para resolver problemas reales.">A selection of projects where I applied quantitative thinking to solve real problems.</p>
       </div>
 
       <div class="projects__grid">
@@ -359,11 +369,11 @@
         <div class="project-card reveal reveal-delay-1">
           <div class="project-card__accent"></div>
           <div class="project-card__body">
-            <h3 class="project-card__title">Systematic Trading Engine</h3>
-            <span class="project-card__label">Problem</span>
-            <p class="project-card__text">Discretionary trading doesn't scale. Needed a fully systematic, data-driven approach to generate consistent alpha with disciplined risk controls.</p>
-            <span class="project-card__label">Approach</span>
-            <p class="project-card__text">Designed and built an end-to-end quantitative trading system — from signal generation and backtesting to automated execution — with multi-layer risk management.</p>
+            <h3 class="project-card__title" data-es="Motor de Trading Sistemático">Systematic Trading Engine</h3>
+            <span class="project-card__label" data-es="Problema">Problem</span>
+            <p class="project-card__text" data-es="El trading discrecional no escala. Necesitaba un enfoque totalmente sistemático y data-driven para generar alpha consistente con controles de riesgo disciplinados.">Discretionary trading doesn't scale. Needed a fully systematic, data-driven approach to generate consistent alpha with disciplined risk controls.</p>
+            <span class="project-card__label" data-es="Enfoque">Approach</span>
+            <p class="project-card__text" data-es="Diseño y construcción de un sistema de trading cuantitativo end-to-end — desde generación de señales y backtesting hasta ejecución automatizada — con gestión de riesgo multicapa.">Designed and built an end-to-end quantitative trading system — from signal generation and backtesting to automated execution — with multi-layer risk management.</p>
             <div class="project-card__bottom">
               <div class="project-card__tags">
                 <span class="project-card__tag">Python</span>
@@ -371,10 +381,10 @@
                 <span class="project-card__tag">Backtesting</span>
                 <span class="project-card__tag">Risk Management</span>
               </div>
-              <div class="project-card__impact">10+ years backtested | 2,000+ trades executed</div>
+              <div class="project-card__impact" data-es="10+ años backtested | 2,000+ operaciones ejecutadas">10+ years backtested | 2,000+ trades executed</div>
               <div class="project-card__footer">
                 <a href="#" class="project-card__link">
-                  View on GitHub
+                  <span data-es="Ver en GitHub">View on GitHub</span>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
                 </a>
               </div>
@@ -385,11 +395,11 @@
         <div class="project-card reveal reveal-delay-2">
           <div class="project-card__accent"></div>
           <div class="project-card__body">
-            <h3 class="project-card__title">Equity Valuation & Composite Scoring</h3>
-            <span class="project-card__label">Problem</span>
-            <p class="project-card__text">Traditional stock screening relies on single metrics that miss the full picture of a company's value and momentum.</p>
-            <span class="project-card__label">Approach</span>
-            <p class="project-card__text">Built multi-factor valuation models combining P/E, ROE, debt metrics, and momentum signals to generate predictive composite scores for stock selection.</p>
+            <h3 class="project-card__title" data-es="Valoración de Equities & Scoring Compuesto">Equity Valuation & Composite Scoring</h3>
+            <span class="project-card__label" data-es="Problema">Problem</span>
+            <p class="project-card__text" data-es="El screening tradicional de acciones se basa en métricas individuales que no capturan el valor completo ni el momentum de una empresa.">Traditional stock screening relies on single metrics that miss the full picture of a company's value and momentum.</p>
+            <span class="project-card__label" data-es="Enfoque">Approach</span>
+            <p class="project-card__text" data-es="Construcción de modelos de valoración multi-factor combinando P/E, ROE, métricas de deuda y señales de momentum para generar scores predictivos compuestos.">Built multi-factor valuation models combining P/E, ROE, debt metrics, and momentum signals to generate predictive composite scores for stock selection.</p>
             <div class="project-card__bottom">
               <div class="project-card__tags">
                 <span class="project-card__tag">Python</span>
@@ -397,10 +407,10 @@
                 <span class="project-card__tag">Factor Models</span>
                 <span class="project-card__tag">Quantitative Analysis</span>
               </div>
-              <div class="project-card__impact">Improved portfolio alpha through data-driven stock selection</div>
+              <div class="project-card__impact" data-es="Mejora del alpha de cartera mediante selección de acciones data-driven">Improved portfolio alpha through data-driven stock selection</div>
               <div class="project-card__footer">
                 <a href="#" class="project-card__link">
-                  View on GitHub
+                  <span data-es="Ver en GitHub">View on GitHub</span>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
                 </a>
               </div>
@@ -411,11 +421,11 @@
         <div class="project-card reveal reveal-delay-3">
           <div class="project-card__accent"></div>
           <div class="project-card__body">
-            <h3 class="project-card__title">Fraud Detection — Tabby BNPL</h3>
-            <span class="project-card__label">Problem</span>
-            <p class="project-card__text">A Buy Now Pay Later fintech needed to reduce its default rate (PD30) from 4.01% to 1.8% while maintaining approval rates, with limited fraud labels and severe class imbalance.</p>
-            <span class="project-card__label">Approach</span>
-            <p class="project-card__text">Built a supervised ML pipeline with rules-based labeling, feature engineering from transactional patterns, and ensemble methods (XGBoost, Random Forest, Logistic Regression).</p>
+            <h3 class="project-card__title" data-es="Detección de Fraude — Tabby BNPL">Fraud Detection — Tabby BNPL</h3>
+            <span class="project-card__label" data-es="Problema">Problem</span>
+            <p class="project-card__text" data-es="Una fintech Buy Now Pay Later necesitaba reducir su tasa de impago (PD30) del 4.01% al 1.8% manteniendo las tasas de aprobación, con etiquetas de fraude limitadas y severo desbalance de clases.">A Buy Now Pay Later fintech needed to reduce its default rate (PD30) from 4.01% to 1.8% while maintaining approval rates, with limited fraud labels and severe class imbalance.</p>
+            <span class="project-card__label" data-es="Enfoque">Approach</span>
+            <p class="project-card__text" data-es="Pipeline de ML supervisado con etiquetado basado en reglas, feature engineering de patrones transaccionales y métodos ensemble (XGBoost, Random Forest, Regresión Logística).">Built a supervised ML pipeline with rules-based labeling, feature engineering from transactional patterns, and ensemble methods (XGBoost, Random Forest, Logistic Regression).</p>
             <div class="project-card__bottom">
               <div class="project-card__tags">
                 <span class="project-card__tag">Python</span>
@@ -426,7 +436,7 @@
               <div class="project-card__impact">85%+ precision, PD30 reduced to ~1.8% with ~0% decline rate</div>
               <div class="project-card__footer">
                 <a href="https://github.com/pabloferraro99/Fraud-Detection-Mini" class="project-card__link" target="_blank" rel="noopener">
-                  View on GitHub
+                  <span data-es="Ver en GitHub">View on GitHub</span>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
                 </a>
               </div>
@@ -437,11 +447,11 @@
         <div class="project-card reveal reveal-delay-1">
           <div class="project-card__accent"></div>
           <div class="project-card__body">
-            <h3 class="project-card__title">Predictive Maintenance — Airbus</h3>
-            <span class="project-card__label">Problem</span>
-            <p class="project-card__text">Unplanned aircraft maintenance events cause massive costs and operational disruption. Early anomaly detection is critical.</p>
-            <span class="project-card__label">Approach</span>
-            <p class="project-card__text">Developed a predictive maintenance pipeline on 20M+ time-series records using Autoencoder + XGBoost for anomaly detection and failure prediction.</p>
+            <h3 class="project-card__title" data-es="Mantenimiento Predictivo — Airbus">Predictive Maintenance — Airbus</h3>
+            <span class="project-card__label" data-es="Problema">Problem</span>
+            <p class="project-card__text" data-es="Los eventos de mantenimiento no planificados en aviación generan costes masivos y disrupciones operativas. La detección temprana de anomalías es crítica.">Unplanned aircraft maintenance events cause massive costs and operational disruption. Early anomaly detection is critical.</p>
+            <span class="project-card__label" data-es="Enfoque">Approach</span>
+            <p class="project-card__text" data-es="Pipeline de mantenimiento predictivo sobre 20M+ registros de series temporales usando Autoencoder + XGBoost para detección de anomalías y predicción de fallos.">Developed a predictive maintenance pipeline on 20M+ time-series records using Autoencoder + XGBoost for anomaly detection and failure prediction.</p>
             <div class="project-card__bottom">
               <div class="project-card__tags">
                 <span class="project-card__tag">Python</span>
@@ -452,7 +462,7 @@
               <div class="project-card__impact">>80% precision, ~$30K/month cost savings per aircraft</div>
               <div class="project-card__footer">
                 <a href="#" class="project-card__link">
-                  View on GitHub
+                  <span data-es="Ver en GitHub">View on GitHub</span>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
                 </a>
               </div>
@@ -471,8 +481,8 @@
   <section class="section section--light" id="education">
     <div class="container">
       <div class="section__header reveal">
-        <span class="section-label">Education & Certifications</span>
-        <h2 class="section-title">Academic Foundation</h2>
+        <span class="section-label" data-es="Formación">Education & Certifications</span>
+        <h2 class="section-title" data-es="Base Académica">Academic Foundation</h2>
       </div>
 
       <div class="education__grid">
@@ -482,7 +492,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.1 2.7 3 6 3s6-1.9 6-3v-5"/></svg>
           </div>
           <div class="edu-card__info">
-            <h3 class="edu-card__title">Master's in Data Science & AI</h3>
+            <h3 class="edu-card__title" data-es="Máster en Data Science & IA">Master's in Data Science & AI</h3>
             <p class="edu-card__institution">IE School of Human Sciences and Technology, Madrid</p>
             <span class="edu-card__date">Sept 2023 — July 2024</span>
           </div>
@@ -493,7 +503,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
           </div>
           <div class="edu-card__info">
-            <h3 class="edu-card__title">Exchange Program — DS & AI</h3>
+            <h3 class="edu-card__title" data-es="Programa de Intercambio — DS & IA">Exchange Program — DS & AI</h3>
             <p class="edu-card__institution">UC Berkeley, California</p>
             <span class="edu-card__date">April 2024</span>
           </div>
@@ -504,8 +514,8 @@
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.1 2.7 3 6 3s6-1.9 6-3v-5"/></svg>
           </div>
           <div class="edu-card__info">
-            <h3 class="edu-card__title">BSc Business Management</h3>
-            <p class="edu-card__institution">Universitat de Valencia (High Performance Group)</p>
+            <h3 class="edu-card__title" data-es="Grado en Administración de Empresas">BSc Business Management</h3>
+            <p class="edu-card__institution" data-es="Universitat de Valencia (Grupo de Alto Rendimiento)">Universitat de Valencia (High Performance Group)</p>
             <span class="edu-card__date">Sept 2018 — Dec 2022</span>
           </div>
         </div>
@@ -521,9 +531,9 @@
   <section class="section section--dark contact" id="contact">
     <div class="container">
       <div class="reveal">
-        <span class="section-label">Contact</span>
-        <h2 class="contact__title">Let's Work Together</h2>
-        <p class="contact__subtitle">
+        <span class="section-label" data-es="Contacto">Contact</span>
+        <h2 class="contact__title" data-es="Trabajemos Juntos">Let's Work Together</h2>
+        <p class="contact__subtitle" data-es="Abierto a nuevas oportunidades, colaboraciones y conversaciones interesantes sobre datos, finanzas y tecnología.">
           Open to new opportunities, collaborations, and interesting conversations about data, finance, and technology.
         </p>
       </div>
@@ -553,7 +563,7 @@
        ======================================== -->
   <footer class="footer">
     <div class="container">
-      <p class="footer__text">&copy; <span id="year"></span> Pablo Ferraro. Built with precision.</p>
+      <p class="footer__text">&copy; <span id="year"></span> Pablo Ferraro</p>
     </div>
   </footer>
 

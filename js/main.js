@@ -197,6 +197,41 @@
     animate();
   })();
 
+  // --- Language toggle (EN/ES) ---
+  (function initLang() {
+    var translatables = document.querySelectorAll('[data-es]');
+    // Store original EN text
+    translatables.forEach(function (el) {
+      el.setAttribute('data-en', el.textContent);
+    });
+
+    function setLang(lang) {
+      translatables.forEach(function (el) {
+        var text = el.getAttribute('data-' + lang);
+        if (text) el.textContent = text;
+      });
+      // Update active button state across all toggles
+      document.querySelectorAll('.nav__lang-btn').forEach(function (btn) {
+        btn.classList.toggle('nav__lang-btn--active', btn.getAttribute('data-lang') === lang);
+      });
+      document.documentElement.lang = lang;
+      try { localStorage.setItem('lang', lang); } catch (e) {}
+    }
+
+    // Bind all lang buttons (desktop + mobile)
+    document.querySelectorAll('.nav__lang-btn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        setLang(btn.getAttribute('data-lang'));
+      });
+    });
+
+    // Restore saved preference
+    try {
+      var saved = localStorage.getItem('lang');
+      if (saved === 'es') setLang('es');
+    } catch (e) {}
+  })();
+
   // --- Animated counters ---
   var counters = document.querySelectorAll('.counter');
 
